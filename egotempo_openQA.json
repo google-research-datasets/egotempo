@@ -5,6 +5,13 @@
   },
   "annotations": [
     {
+      "question_id": "0d270946-95c5-4e71-ae49-b9e802548147_120.0_180.0",
+      "clip_id": "0d270946-95c5-4e71-ae49-b9e802548147_120.0_180.0",
+      "question_type": "object-specific action",
+      "question": "Which object does the person pick up after taking the bowl from the cupboard?",
+      "answer": "A spoon."
+    },
+    {
       "question_id": "27470817-f803-45b4-b9d4-e754cb3196bc_368.4019995568589_403.56079044314106_0",
       "clip_id": "27470817-f803-45b4-b9d4-e754cb3196bc_368.4019995568589_403.56079044314106",
       "question_type": "object-specific action",
