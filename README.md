@@ -1,8 +1,8 @@
 # The EgoTempo Dataset
-This repository contains the EgoTempo dataset for the CVPR 2025 paper [Omnia de EgoTempo: Benchmarking Temporal Understanding of Multi-Modal LLMs in Egocentric Videos](https://arxiv.org/).
+This repository contains the EgoTempo dataset for the CVPR 2025 paper [Omnia de EgoTempo: Benchmarking Temporal Understanding of Multi-Modal LLMs in Egocentric Videos](https://arxiv.org/pdf/2503.13646).
 
 ## News
-- 2025.03.15: The EgoTempo dataset is released.
+- 2025.03.19: The EgoTempo dataset is released.
 - 2025.02.26: Paper accepted to CVPR 2025.
 
 ## Overview
@@ -87,7 +87,7 @@ If you use this dataset in your research, please cite:
 
 ## Contact
 For questions or issues related to the dataset, please open an issue in this
-repository or contact the authors via the information provided in the paper.
+repository or contact the authors.
 
 This is not an officially supported Google product. This project is not
 eligible for the [Google Open Source Software Vulnerability Rewards
