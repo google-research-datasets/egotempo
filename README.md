@@ -68,6 +68,54 @@ EgoTempo is intended for zero-shot evaluation. The metric calculation requires
 a LLM as the autorate, judging the open answer against the collected ground
 truth. We will release the evaluation code soon.
 
+
+# EgoTempo QA Benchmark Toolkit
+
+This repository provides a full pipeline for working with QA benchmarks based on the [Ego4D](https://ego4d-data.org/) dataset. It includes tools for downloading videos, generating trimmed clips, running inference with Google's Gemini model, and evaluating prediction quality.
+
+## 📦 What’s Included
+
+### 1. Video Downloading and Trimming
+
+We provide scripts to:
+
+- **Download full Ego4D videos** using public links or access tokens.
+- **Trim videos into clips** corresponding to the time intervals associated with specific question-answer (QA) pairs.
+
+This is essential for efficiently processing the relevant visual content associated with each QA.
+
+---
+
+### 2. Inference using Gemini API
+
+We include a complete inference pipeline using the **Google Gemini** large vision-language model to generate answers based on frames extracted from video clips.
+
+- The provided implementation is tailored for a single dataset (`EgoTempo OpenQA`), but the codebase is **modular and scales well** as a template for adapting to **any QA dataset** derived from egocentric video.
+- Questions are formatted into prompts, frames are converted to base64, and results are saved in JSON format.
+
+---
+
+### 3. Evaluation Code
+
+We provide **evaluation scripts** to assess the correctness of generated answers, allowing you to:
+
+- Compare Gemini’s answers to ground-truth answers.
+
+---
+
+## 🚀 Quickstart
+
+All steps are integrated into a single Jupyter notebook for ease of use:
+
+1. **Download** the full Ego4D videos and **trim** them into clips based on QA timestamps.
+2. **Run inference** using the Gemini API on the selected dataset.
+3. **Evaluate the predictions** for correctness against ground truth answers.
+
+You can run everything step-by-step in the provided notebook for full reproducibility.
+
+
+
+
 ## License
 
 The EgoTempo dataset is released under the [CC-BY License](https://creativecommons.org/licenses/by/4.0/).
