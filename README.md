@@ -90,7 +90,7 @@ This is essential for efficiently processing the relevant visual content associa
 
 We include a complete inference pipeline using the **Google Gemini** large vision-language model to generate answers based on frames extracted from video clips.
 
-- The provided implementation is tailored for a single dataset (`EgoTempo OpenQA`), but the codebase is **modular and scales well** as a template for adapting to **any QA dataset** derived from egocentric video.
+- The provided implementation is tailored for a single model, but the codebase is **modular and scales well** as a template for adapting to **any QA dataset** derived from egocentric video.
 - Questions are formatted into prompts, frames are converted to base64, and results are saved in JSON format.
 
 ---
@@ -105,7 +105,7 @@ We provide **evaluation scripts** to assess the correctness of generated answers
 
 ## 🚀 Quickstart
 
-All steps are integrated into a single Jupyter notebook for ease of use:
+All steps are integrated into a single Jupyter notebook (`gemini_eval.ipynb`) for ease of use:
 
 1. **Download** the full Ego4D videos and **trim** them into clips based on QA timestamps.
 2. **Run inference** using the Gemini API on the selected dataset.
